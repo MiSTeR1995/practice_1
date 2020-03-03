@@ -2,12 +2,12 @@ $roboto-slab: 'Roboto Slab',;
 * {
     box-sizing: border-box;
 }
-
-.col-span-2 {
-    grid-column: span 2;
-
-}
-
+// .col-span-2 {
+//     grid-column: span 2;
+// }
+// .row-span-2 {
+//     grid-row: span 2;
+// }
 body {
     margin: 0;
     font-family: 'Open Sans';
@@ -144,99 +144,122 @@ header {
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 500;
+
+        &:hover {
+            color: #ffffff;
+            background-color: #43a906;
+        }
     }
 
     .tab-control {
         text-align: center;
         margin-bottom: 55px;
-
     }
     .tab-button + .tab-button {
         margin-left: 6px;
     }
     .tab-item {
         display: none;
+
         &.active {
             display: grid;
-            grid-template-columns: repeat (4,1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-auto-rows: 285px;
             gap: 10px;
         }
     }
+    .work-case:nth-child(5n+1),
+    .work-case:nth-child(5n+5) {
+        grid-column: span 2;
+        background-color: red;
+    }
+    .work-case:nth-child(5n+3) {
+        grid-row: span 2;
+        background-color: yellow;
+    }
+    .work-case {
+
+        & > img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
 }
-// nav {
-//     background-color: #ffffff;
-//     position: relative;
-//     font-family: "Roboto Slab";
-//     height: 105px;
-//     display: flex;
-//     align-items: center;
-//
-//     .container {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//     }
-//
-//     .nav-logo {
-//         position: relative;
-//         display: flex;
-//         flex-direction: column;
-//         top: -15px;
-//     }
-//
-//     .logo-up {
-//         position: relative;
-//         top: 17px;
-//         left: 19px;
-//         font-size: 23px;
-//         font-weight: bold;
-//         color: #43a906;
-//         text-transform: uppercase;
-//
-//         .leaf-2 {
-//             margin-left: -6px;
-//             transform: rotateY(180deg);
-//         }
-//     }
-//
-//     .logo-down {
-//         color: #3e3e3e;
-//         font-weight: bold;
-//         font-size: 29px;
-//     }
-//
-//     .nav-bar ul {
-//         list-style-type: none;
-//         padding: 0;
-//         margin: 0;
-//     }
-//
-//     .nav-bar li {
-//         display: inline-block;
-//     }
-//
-//     .list-item {
-//         text-decoration: none;
-//         color: #393939;
-//         line-height: 12px;
-//         font-size: 14px;
-//         font-weight: bold;
-//         text-transform: uppercase;
-//         padding: 40px 15px 37px;
-//         cursor: pointer;
-//     }
-//
-//     .contact-us {
-//         padding-right: 0;
-//     }
-//
-//     .nav-bar .list-item:hover {
-//         box-sizing: border-box;
-//         color: #43a906;
-//         border-bottom: 5px solid #43a906;
-//     }
-// }
+/* nav {
+    background-color: #ffffff;
+    position: relative;
+    font-family: "Roboto Slab";
+    height: 105px;
+    display: flex;
+    align-items: center;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-logo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: -15px;
+    }
+
+    .logo-up {
+        position: relative;
+        top: 17px;
+        left: 19px;
+        font-size: 23px;
+        font-weight: bold;
+        color: #43a906;
+        text-transform: uppercase;
+
+        .leaf-2 {
+            margin-left: -6px;
+            transform: rotateY(180deg);
+        }
+    }
+
+    .logo-down {
+        color: #3e3e3e;
+        font-weight: bold;
+        font-size: 29px;
+    }
+
+    .nav-bar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-bar li {
+        display: inline-block;
+    }
+
+    .list-item {
+        text-decoration: none;
+        color: #393939;
+        line-height: 12px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 40px 15px 37px;
+        cursor: pointer;
+    }
+
+    .contact-us {
+        padding-right: 0;
+    }
+
+    .nav-bar .list-item:hover {
+        box-sizing: border-box;
+        color: #43a906;
+        border-bottom: 5px solid #43a906;
+    }
+} */
 
 .protect-nature {
     background-image: url("../img/nature.jpg");
