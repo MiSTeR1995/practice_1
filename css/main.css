@@ -14,6 +14,10 @@ body {
   margin-right: auto;
 }
 
+.container.sections-with-h2 {
+  padding: 114px 0;
+}
+
 header {
   -webkit-box-shadow: 0 1px 3px 0 rgba(155, 155, 155, 0.2);
           box-shadow: 0 1px 3px 0 rgba(155, 155, 155, 0.2);
@@ -205,10 +209,14 @@ header .social-icon:hover {
   margin: 0;
   height: 27px;
   line-height: 27px;
+  color: #222222;
 }
 
-.latest-work .container {
-  padding: 114px 0;
+.section-description {
+  max-width: 880px;
+  margin: 30px auto 60px auto;
+  font-size: 16px;
+  text-align: center;
 }
 
 .latest-work .text-header {
@@ -216,11 +224,7 @@ header .social-icon:hover {
 }
 
 .latest-work .section-description {
-  max-width: 880px;
-  margin: 30px auto 60px auto;
-  font-size: 16px;
   line-height: 1.75;
-  text-align: center;
   color: #393939;
 }
 
@@ -283,6 +287,15 @@ header .social-icon:hover {
   height: 100%;
 }
 
+.achievements {
+  background-color: #bdbebd;
+  color: #fff;
+}
+
+.achievements .text-header-2 {
+  color: #fff;
+}
+
 .achievements .achieve-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,8 +308,8 @@ header .social-icon:hover {
 .achievements .achieve-description {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
   grid-auto-columns: auto;
   font-family: "Roboto Slab";
   text-align: center;
@@ -306,15 +319,66 @@ header .social-icon:hover {
   text-transform: uppercase;
 }
 
-.achievements .achieve-item:nth-child(2n+2) {
-  height: 33px;
+.achievements .numbers > span {
+  position: relative;
+  height: 37px;
   line-height: 33px;
   font-size: 37px;
+}
+
+.achievements .numbers > span::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: #fff;
+  right: 1.5px;
+  left: 1.5px;
+  bottom: -20px;
 }
 
 .achievements .ach-icon {
   color: #43a906;
   font-size: 80px;
+}
+
+.achievements .bolt {
+  -webkit-transform: skewY(-20deg);
+          transform: skewY(-20deg);
+}
+
+.achievements .envira {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.event-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+}
+
+.event-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 760px;
+  max-width: 760px;
+  height: 588px;
+}
+
+.event-left .left-top {
+  height: 50%;
+}
+
+.event-left .left-bot {
+  height: 50%;
+}
+
+.event-left .event-item {
+  width: 50%;
+  height: 100%;
+  background-color: red;
 }
 
 /* nav {
