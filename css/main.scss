@@ -311,30 +311,57 @@ header {
 }
 .event-content {
     display: flex;
+    width: 1170px;
+    height: 588px;
     // justify-content: space-between;
     border: 1px solid black;
 }
 
 .event-left {
     display: flex;
-    min-width: 760px;
-    max-width: 760px;
-    height: 588px;
+    flex-grow: 1;
+    // flex-basis: 100%;
+}
+.event-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .event-about + .event-about {
+        margin-top: 34px;
+    }
+    .event-about {
+        display: flex;
 
-    .left-top {
-        height: 50%;
-    }
-    .left-bot {
-        height: 50%;
-    }
-    .event-item {
-        width: 50%;
-        height: 100%;
-        background-color: red;
+        .event-img-item {
+            display: inline-block;
+            width: 95px;
+            height: 90px;
+            object-fit: cover;
+            object-position: left;
+        }
+        .text-header-2 {
+            margin: 0;
+            height: 18px;
+            line-height: 18px;
+            font-size: 18px;
+            text-transform: capitalize;
+            color: #454444;
+            text-align: left;
+        }
+
+        .text-for-image {
+            margin-left: 22px;
+        }
+        span {
+            display: inline-block;
+            font-size: 14px;
+            padding-top: 20px;
+            color: #646464;
+            line-height: 1.71;
+        }
     }
 
 }
-
 /* nav {
     background-color: #ffffff;
     position: relative;
