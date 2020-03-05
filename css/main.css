@@ -18,6 +18,22 @@ body {
   padding: 114px 0;
 }
 
+.read-more {
+  width: 180px;
+  height: 57px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #101010;
+  text-transform: uppercase;
+}
+
 header {
   -webkit-box-shadow: 0 1px 3px 0 rgba(155, 155, 155, 0.2);
           box-shadow: 0 1px 3px 0 rgba(155, 155, 155, 0.2);
@@ -184,22 +200,6 @@ header .social-icon:hover {
   line-height: 90px;
 }
 
-.protect-nature button {
-  width: 180px;
-  height: 57px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  cursor: pointer;
-  border-radius: 2px;
-  font-family: 'Lato';
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #101010;
-  text-transform: uppercase;
-}
-
 .text-header-2 {
   font-family: "Roboto Slab";
   font-size: 36px;
@@ -280,6 +280,10 @@ header .social-icon:hover {
   background-color: yellow;
 }
 
+.latest-work .work-case {
+  position: relative;
+}
+
 .latest-work .work-case > img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -287,9 +291,43 @@ header .social-icon:hover {
   height: 100%;
 }
 
+.latest-work .work-case:hover .case-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.latest-work .case-description {
+  display: none;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(3, 3, 3, 0.85);
+  color: white;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .achievements {
+  position: relative;
   background-color: #bdbebd;
   color: #fff;
+  /* .container {
+        // position: absolute;
+        // left: 0;
+        // right: 0;
+        // top: 0;
+        // bottom: 0;
+    } */
 }
 
 .achievements .text-header-2 {
@@ -357,22 +395,89 @@ header .social-icon:hover {
   display: flex;
   width: 1170px;
   height: 588px;
-  border: 1px solid black;
 }
 
-.event-left {
+.event-content .event-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
 }
 
-.event-right {
+.event-content .event-left .left-top {
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.event-content .event-left .left-bot {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.event-content .event-left .event-item {
+  width: 50%;
+  height: 100%;
+  background-color: #bdbebd;
+}
+
+.event-content .event-left .event-item.not-empty {
+  background-color: #eff0f2;
+  padding: 30px 26px 35px 26px;
+  text-align: center;
+}
+
+.event-content .event-left .text-header-2 {
+  height: 18px;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.event-content .event-left .under-head {
+  margin: 0;
+  margin-top: 16px;
+  height: 15px;
+  font-size: 14px;
+  color: #6c6b6b;
+  font-family: "Roboto Slab";
+}
+
+.event-content .event-left .underhead-text {
+  margin: 0;
+  margin-top: 23px;
+  font-size: 14px;
+  word-wrap: break-word;
+  line-height: 1.71;
+  color: #646464;
+}
+
+.event-content .event-left .read-more {
+  width: 129px;
+  height: 40px;
+  font-size: 12px;
+  font-family: 'Open Sans';
+  line-height: 9px;
+  margin-top: 26px;
+}
+
+.event-content .event-left .read-more:hover {
+  color: #ffffff;
+  background-color: #43a906;
+}
+
+.event-content .event-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 22px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -380,19 +485,21 @@ header .social-icon:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
 }
 
-.event-right .event-about + .event-about {
+.event-content .event-right .event-about + .event-about {
   margin-top: 34px;
 }
 
-.event-right .event-about {
+.event-content .event-right .event-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.event-right .event-about .event-img-item {
+.event-content .event-right .event-about .event-img-item {
   display: inline-block;
   width: 95px;
   height: 90px;
@@ -402,7 +509,7 @@ header .social-icon:hover {
      object-position: left;
 }
 
-.event-right .event-about .text-header-2 {
+.event-content .event-right .event-about .text-header-2 {
   margin: 0;
   height: 18px;
   line-height: 18px;
@@ -412,11 +519,11 @@ header .social-icon:hover {
   text-align: left;
 }
 
-.event-right .event-about .text-for-image {
+.event-content .event-right .event-about .text-for-image {
   margin-left: 22px;
 }
 
-.event-right .event-about span {
+.event-content .event-right .event-about span {
   display: inline-block;
   font-size: 14px;
   padding-top: 20px;
