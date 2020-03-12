@@ -1,4 +1,4 @@
-let arr  = [];
+/* let arr  = [];
 let minArrayValue = -100;
 let maxArrayValue = 100;
 
@@ -26,4 +26,8 @@ let temp = arr[indMin];
 arr[indMin] = arr[indMax];
 arr[indMax] = temp;
 
-console.log("Измененный массив: [" + arr + "]");
+console.log("Измененный массив: [" + arr + "]")
+*/
+
+// Объекты
+// Object.assign({}, obj1) - копирование свойств объекта
