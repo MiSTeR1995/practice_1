@@ -517,19 +517,8 @@ header {
 }
 
 .buy-wordpress {
-    position: relative;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.73);
 
-    // opacity: 0.73;
-    .opacty {
-        position: absolute;
-        background-color: #000000;
-        opacity: 0.73;
-        width: inherit;
-        height: inherit;
-        top: 0;
-        left: 0;
-    }
     .container {
         display: flex;
         justify-content: space-between;
