@@ -18,7 +18,7 @@ body {
   padding: 114px 0;
 }
 
-.read-more {
+.page-button {
   width: 180px;
   height: 57px;
   padding: 0;
@@ -459,7 +459,7 @@ header .social-icon:hover {
   color: #646464;
 }
 
-.event-content .event-left .read-more {
+.event-content .event-left .page-button {
   width: 129px;
   height: 40px;
   font-size: 12px;
@@ -468,7 +468,7 @@ header .social-icon:hover {
   margin-top: 26px;
 }
 
-.event-content .event-left .read-more:hover {
+.event-content .event-left .page-button:hover {
   color: #ffffff;
   background-color: #43a906;
 }
@@ -597,6 +597,72 @@ header .social-icon:hover {
 
 .testimonials .feedback-info .name-fdb-position {
   color: #43a906;
+}
+
+.buy-wordpress {
+  position: relative;
+  background-color: #000000;
+}
+
+.buy-wordpress .opacty {
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.73;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+}
+
+.buy-wordpress .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+}
+
+.buy-wordpress .page-button {
+  height: 47px;
+  width: 211px;
+  background-color: #43a906;
+  font-size: 18px;
+  font-family: "Roboto Slab";
+}
+
+.buy-wordpress span {
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 37px 0;
+  background-color: #222222;
+  height: 90px;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container > span {
+  color: #fff;
+  font-size: 14px;
+  height: 15px;
+  line-height: 15px;
 }
 
 /* nav {
