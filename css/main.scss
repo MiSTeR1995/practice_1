@@ -447,7 +447,69 @@ header {
 
     }
 }
+.testimonials {
+    background-color: black;
+    color: #ffffff;
 
+    .text-header-2 {
+        color: #ffffff;
+
+    }
+    .section-description {
+        margin: 30px auto 114px auto;
+    }
+    .testimonial-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .feedback {
+        position: relative;
+        background-color: #fff;
+        font-style: italic;
+        font-size: 14px;
+        color: #646464;
+        line-height: 1.86;
+        max-width: 570px;
+        padding: 68px 19px 55px 65px;
+
+        .fdb-quote {
+            position: absolute;
+            left: 25px;
+            font-size: 24px;
+            line-height: 0.83;
+            color: #222222;
+            text-align: right;
+        }
+        .feedback-photo {
+            position: absolute;
+            top: -58px;
+            left: 231px;
+            width: 107px;
+            height: 105px;
+            border-radius: 100%;
+            background-color: #bdbebd;
+        }
+    }
+    .feedback-info {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-direction: column;
+        margin: 32px auto 0 auto;
+        text-align: center;
+
+        & > p {
+            margin: 0;
+            font-family: $roboto-slab;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+       .name-fdb-position {
+            color:#43a906;
+       }
+    }
+}
 
 /* nav {
     background-color: #ffffff;

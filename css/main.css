@@ -531,6 +531,74 @@ header .social-icon:hover {
   line-height: 1.71;
 }
 
+.testimonials {
+  background-color: black;
+  color: #ffffff;
+}
+
+.testimonials .text-header-2 {
+  color: #ffffff;
+}
+
+.testimonials .section-description {
+  margin: 30px auto 114px auto;
+}
+
+.testimonials .testimonial-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonials .feedback {
+  position: relative;
+  background-color: #fff;
+  font-style: italic;
+  font-size: 14px;
+  color: #646464;
+  line-height: 1.86;
+  max-width: 570px;
+  padding: 68px 19px 55px 65px;
+}
+
+.testimonials .feedback .fdb-quote {
+  position: absolute;
+  left: 25px;
+  font-size: 24px;
+  line-height: 0.83;
+  color: #222222;
+  text-align: right;
+}
+
+.testimonials .feedback .feedback-photo {
+  position: absolute;
+  top: -58px;
+  left: 231px;
+  width: 107px;
+  height: 105px;
+  border-radius: 100%;
+  background-color: #bdbebd;
+}
+
+.testimonials .feedback-info {
+  margin: 32px auto 0 auto;
+  text-align: center;
+}
+
+.testimonials .feedback-info > p {
+  margin: 0;
+  font-family: "Roboto Slab";
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.testimonials .feedback-info .name-fdb-position {
+  color: #43a906;
+}
+
 /* nav {
     background-color: #ffffff;
     position: relative;
