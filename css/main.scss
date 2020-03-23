@@ -38,6 +38,24 @@ body {
     text-transform: uppercase;
 }
 
+.text-header-2 {
+    font-family: $roboto-slab;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    height: 27px;
+    line-height: 27px;
+    color: #222222;
+}
+.section-description {
+    max-width: 880px;
+    margin: 30px auto 60px auto;
+    font-size: 16px;
+    text-align: center;
+}
+
 header {
     box-shadow: 0 1px 3px 0 rgba(155,155,155, 0.2);
     background-color: #fbfbfb;
@@ -72,6 +90,7 @@ header {
 }
 
 .navigation-panel {
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -177,22 +196,130 @@ header {
 
 }
 
-.text-header-2 {
-    font-family: $roboto-slab;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    height: 27px;
-    line-height: 27px;
-    color: #222222;
+.welcome {
+
+    .welcome-about {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+
+    .welcome-item {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+
+        .welcome-circle {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 2px #c4c4c4;
+            border-radius: 100%;
+            width: 120px;
+            height: 120px;
+
+            .welcome-icon {
+                font-size: 45px;
+                color: #c4c4c4;
+
+                &.tint {
+                    transform: rotate(180deg);
+                }
+            }
+
+
+        }
+
+        h3 {
+            font-family: $roboto-slab;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            height: 15px;
+            line-height: 15px;
+            color: #393939;
+            margin: 34px 0 0 0;
+        }
+
+        &:hover,
+        &.active {
+
+            .welcome-circle {
+                box-sizing: border-box;
+                border: solid 2px #43a906;
+                background-color: #43a906;
+            }
+
+            .welcome-icon {
+                color: #ffffff;
+            }
+
+            h3 {
+                color: #43a906;
+            }
+        }
+
+    }
+    .welcome-description {
+        max-width: 250px;
+        font-size: 14px;
+        color: #646464;
+        text-align: justify-center;
+        line-height: 1.71;
+        margin-top: 25px;
+    }
+
+
 }
-.section-description {
-    max-width: 880px;
-    margin: 30px auto 60px auto;
-    font-size: 16px;
-    text-align: center;
+
+.volunteer{
+
+    background-color: #222222;
+    height: 302px;
+    padding: 100px 0;
+
+    .become-vol {
+        position: relative;
+        height: 34px;
+        line-height: 34px;
+        font-size: 45px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        span {
+            color: #43a906;
+        }
+    }
+    .volunteer-description {
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        display: inline-block;
+        color: #ffffff;
+
+        div {
+            display: inline-block;
+            margin: 0;
+            width: 720px;
+            font-size: 14.5px;
+            line-height: 1.66;
+        }
+    }
+    .page-button {
+        position: absolute;
+        right: 19px;
+        top: 34px;
+        width: 208px;
+        font-family: inherit;
+        height: 52px;
+        font-size: 18px;
+        background-color: #43a906;
+    }
+
 }
 
 .latest-work {
@@ -516,6 +643,19 @@ header {
     }
 }
 
+.latest-blog {
+
+    .blog-content {
+        display: flex;
+        justify-content: space-between;
+
+        .blog-item {
+            width: 375px;
+        }
+    }
+
+}
+
 .buy-wordpress {
     background-color: rgba(0, 0, 0, 0.73);
 
@@ -563,77 +703,3 @@ footer {
     }
 
 }
-
-/* nav {
-    background-color: #ffffff;
-    position: relative;
-    font-family: "Roboto Slab";
-    height: 105px;
-    display: flex;
-    align-items: center;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-logo {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        top: -15px;
-    }
-
-    .logo-up {
-        position: relative;
-        top: 17px;
-        left: 19px;
-        font-size: 23px;
-        font-weight: bold;
-        color: #43a906;
-        text-transform: uppercase;
-
-        .leaf-2 {
-            margin-left: -6px;
-            transform: rotateY(180deg);
-        }
-    }
-
-    .logo-down {
-        color: #3e3e3e;
-        font-weight: bold;
-        font-size: 29px;
-    }
-
-    .nav-bar ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .nav-bar li {
-        display: inline-block;
-    }
-
-    .list-item {
-        text-decoration: none;
-        color: #393939;
-        line-height: 12px;
-        font-size: 14px;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 40px 15px 37px;
-        cursor: pointer;
-    }
-
-    .contact-us {
-        padding-right: 0;
-    }
-
-    .nav-bar .list-item:hover {
-        box-sizing: border-box;
-        color: #43a906;
-        border-bottom: 5px solid #43a906;
-    }
-} */
