@@ -874,6 +874,10 @@ header {
 
     background-color: #eeeeee;
 
+    .get-in-header {
+        font-size: 22px;
+        text-align: left;
+    }
     .get-in-content {
         display: flex;
         justify-content: space-between;
@@ -881,34 +885,96 @@ header {
     .get-in-office {
 
         width: 550px;
-        font-size: 14px;
         color: #696969;
 
     }
     .office-main {
         padding-left: 3px;
-        margin-top: 3p;
+        margin-top: 33px;
     }
     .office-info {
 
+        font-size: 20px;
+        height: 15px;
+        line-height: 15px;
+
         span {
+
             margin-left: 10px;
+            font-size: 14px;
         }
+
         & + .office-info {
             margin-top: 25px;
         }
+
         &:last-of-type {
             margin-bottom: 46px;
+
+            i {
+                font-size: 14px;
+                height: 12px;
+            }
         }
     }
-
-
     .drop-msg {
         width: 570px;
+
+        form {
+            margin-top: 30px;
+            width: inherit;
+        }
+        .form-inputs {
+
+            input {
+                width: 280px;
+                padding: 19px;
+                height: 50px;
+                background-color: #d4d4d4;
+                border-radius: 2px;
+                font-family: 'Open Sans';
+                font-style: italic;
+                font-size: 14px;
+                color: #696969;
+                border: solid 1px #cacaca;
+            }
+            & + .form-inputs {
+                margin-top: 20px;
+            }
+        }
+        .input-subject {
+            input {
+                width: 570px;
+            }
+        }
+        textarea {
+            width: 570px;
+            height: 219px;
+            background-color: #d4d4d4;
+            border-radius: 2px;
+            border: solid 1px #cacaca;
+            font-size: 14px;
+            line-height: 1.07;
+            font-family: 'Open Sans';
+            font-style: italic;
+            padding: 19px;
+            color: #696969;
+            resize: none;
+        }
+        .two-inputs {
+            display: flex;
+            justify-content: space-between;
+        }
     }
-    .get-in-header {
-        font-size: 22px;
-        text-align: left;
+    .page-button {
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #43a906;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: $roboto-slab;
     }
 }
 

@@ -973,6 +973,11 @@ header .social-icon:hover {
   background-color: #eeeeee;
 }
 
+.get-in .get-in-header {
+  font-size: 22px;
+  text-align: left;
+}
+
 .get-in .get-in-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -984,17 +989,23 @@ header .social-icon:hover {
 
 .get-in .get-in-office {
   width: 550px;
-  font-size: 14px;
   color: #696969;
 }
 
 .get-in .office-main {
   padding-left: 3px;
-  margin-top: 3p;
+  margin-top: 33px;
+}
+
+.get-in .office-info {
+  font-size: 20px;
+  height: 15px;
+  line-height: 15px;
 }
 
 .get-in .office-info span {
   margin-left: 10px;
+  font-size: 14px;
 }
 
 .get-in .office-info + .office-info {
@@ -1005,13 +1016,74 @@ header .social-icon:hover {
   margin-bottom: 46px;
 }
 
+.get-in .office-info:last-of-type i {
+  font-size: 14px;
+  height: 12px;
+}
+
 .get-in .drop-msg {
   width: 570px;
 }
 
-.get-in .get-in-header {
-  font-size: 22px;
-  text-align: left;
+.get-in .drop-msg form {
+  margin-top: 30px;
+  width: inherit;
+}
+
+.get-in .drop-msg .form-inputs input {
+  width: 280px;
+  padding: 19px;
+  height: 50px;
+  background-color: #d4d4d4;
+  border-radius: 2px;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-size: 14px;
+  color: #696969;
+  border: solid 1px #cacaca;
+}
+
+.get-in .drop-msg .form-inputs + .form-inputs {
+  margin-top: 20px;
+}
+
+.get-in .drop-msg .input-subject input {
+  width: 570px;
+}
+
+.get-in .drop-msg textarea {
+  width: 570px;
+  height: 219px;
+  background-color: #d4d4d4;
+  border-radius: 2px;
+  border: solid 1px #cacaca;
+  font-size: 14px;
+  line-height: 1.07;
+  font-family: 'Open Sans';
+  font-style: italic;
+  padding: 19px;
+  color: #696969;
+  resize: none;
+}
+
+.get-in .drop-msg .two-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.get-in .page-button {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #43a906;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Roboto Slab";
 }
 
 footer {
