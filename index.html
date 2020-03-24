@@ -54,17 +54,49 @@
     </section>
 
     <section class="protect-nature">
-        <div class="img-shadow">
-            <div class="container ">
-                <div class="section-header">
-                    <span class="SH-span1">Protect</span>
-                    <span class="SH-span2">Nature the environment</span>
-                    <span class="SH-span3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        <div class="carousel-slide">
+            <img src="./img/slide-1.jpg" class="slide-back" alt="slide-image">
+            <div class="slide-back-shadow"></div>
+            <div class="slide-content">
+                <div class="slide-header">
+                    Protect
+                    <span>earth planet from global warming</span>
                 </div>
-                <button class="page-button">Read more</button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="slide-button">Read more</a>
             </div>
         </div>
+        <div class="carousel-slide active">
+            <img src="./img/slide-2.jpg" class="slide-back" alt="slide-image">
+            <div class="slide-back-shadow"></div>
+            <div class="slide-content">
+                <div class="slide-header">
+                    Protect
+                    <span>nature the environment</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="slide-button">Read more</a>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="./img/slide-3.jpg" class="slide-back" alt="slide-image">
+            <div class="slide-back-shadow"></div>
+            <div class="slide-content">
+                <div class="slide-header">
+                    Protect
+                    <span>old people from corona</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="slide-button">Read more</a>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <button class="carousel-dot" onclick="onDotButtonClick(event)"></button>
+            <button class="carousel-dot active" onclick="onDotButtonClick(event)"></button>
+            <button class="carousel-dot" onclick="onDotButtonClick(event)"></button>
+        </div>
     </section>
+
     <section class="welcome">
         <div class="container sections-with-h2">
             <h2 class="text-header-2"> Welcome to green fair</h2>
@@ -329,26 +361,75 @@
                     <div class="blog-img"></div>
                     <div class="blog-comment">
                         <div class="comment-title">Climate change is affecting bird migration</div>
-                        <div class="comment-stat">sfsdfs</div>
-                        <p class="comment-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="comment-info">
+                            <div>
+                                <span class="comment-date">
+                                    <i class="far fa-clock"></i>
+                                    Aug 19, 2016
+                                </span>
+                                <span class="comment-date">
+                                    <i class="fas fa-user"></i>
+                                    Admin
+                                </span>
+                            </div>
+                            <div class="comment-stat">
+                                <i class="far fa-comments"></i>
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <p class="comment-main">Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. consectetur Lorem ipsum dolor sitamet, conse ctetur adipiscing elit. </p>
                         <a href="#" class="readmore">Read more</a>
                     </div>
                 </div>
                 <div class="blog-item">
                     <div class="blog-img"></div>
                     <div class="blog-comment">
-                        <div class="comment-title">Climate change is affecting bird migration</div>
-                        <div class="comment-stat">sfsdfs</div>
-                        <p class="comment-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="comment-title">
+                            How to avoid indoor air pollution?
+                        </div>
+                        <div class="comment-info">
+                            <div>
+                                <span class="comment-date">
+                                    <i class="far fa-clock"></i>
+                                    Aug 19, 2016
+                                </span>
+                                <span class="comment-date">
+                                    <i class="fas fa-user"></i>
+                                    Admin
+                                </span>
+                            </div>
+                            <div class="comment-stat">
+                                <i class="far fa-comments"></i>
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <p class="comment-main">Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. consectetur Lorem ipsum dolor sitamet, conse ctetur adipiscing elit. </p>
                         <a href="#" class="readmore">Read more</a>
                     </div>
                 </div>
                 <div class="blog-item">
                     <div class="blog-img"></div>
                     <div class="blog-comment">
-                        <div class="comment-title">Climate change is affecting bird migration</div>
-                        <div class="comment-stat">sfsdfs</div>
-                        <p class="comment-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="comment-title">
+                            Threat to Yellowstone’s grizzly bears.
+                        </div>
+                        <div class="comment-info">
+                            <div>
+                                <span class="comment-date">
+                                    <i class="far fa-clock"></i>
+                                    Aug 19, 2016
+                                </span>
+                                <span class="comment-date">
+                                    <i class="fas fa-user"></i>
+                                    Admin
+                                </span>
+                            </div>
+                            <div class="comment-stat">
+                                <i class="far fa-comments"></i>
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <p class="comment-main">Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. consectetur Lorem ipsum dolor sitamet, conse ctetur adipiscing elit. </p>
                         <a href="#" class="readmore">Read more</a>
                     </div>
                 </div>
@@ -363,6 +444,41 @@
         </div>
     </section>
 
+    <section class="get-in">
+        <div class="container sections-with-h2">
+            <h2 class="text-header-2">Latest blog</h2>
+            <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="get-in-content">
+                <div class="get-in-office">
+                    <h3 class="text-header-2 get-in-header">our office info</h3>
+                    <div class="office-main">
+                        <div class="office-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Elephant Road, Dhaka 1205, Bangladesh</span>
+                        </div>
+                        <div class="office-info">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>+ 8801532-987039</span></div>
+                        <div class="office-info">
+                            <i class="fas fa-envelope"></i>
+                            <span>youremail@mail.com</span>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1826.1160477783021!2d90.3862347057411!3d23.739101498631683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c70a76b1bf%3A0x2fba6973f96e93cc!2sDr.%20A%20G%20Khan-%20Meheron%20Homeo%20Hall!5e0!3m2!1sru!2sru!4v1585043315751!5m2!1sru!2sru" width="550" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+                    </div>
+                </div>
+                <div class="drop-msg">
+                    <h3 class="text-header-2 get-in-header">Drop a message</h3>
+                    <form action="">
+                        <input type="text" placeholder="Name *">
+                        <input type="text" placeholder="Email *">
+                        <input type="text" placeholder="Subject *">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message *"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <span>@ 2016 - Design By Sagorika Sultana </span>

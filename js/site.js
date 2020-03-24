@@ -1,33 +1,20 @@
-/* let arr  = [];
-let minArrayValue = -100;
-let maxArrayValue = 100;
+function onDotButtonClick(event) {
+    const activeDotButton = document.querySelector('.carousel-dot.active'); // возвращает одну кнопку с указанным классом
+    const clickedDotButton = event.target;  // получить кнопку куда произошел клик
+    activeDotButton.classList.remove('active'); // убирает класс active у кнопок на странице
+    clickedDotButton.classList.add('active'); // добавить кликнутой кнопке класс active
 
-for (let i = 0; i < 10; i++) {
-    arr[i] = Math.floor(Math.random() * (maxArrayValue - minArrayValue + 1) + minArrayValue);
-}
+    const activeSlide = document.querySelector('.carousel-slide.active'); // вернуть активный слайд
+    activeSlide.classList.remove('active'); // удалить у него класс active
 
-console.log('Первоначальный массив: [' + arr + "]");
+    const slideDots = document.querySelectorAll('.carousel-dot'); // получить коллекцию всех точек (ссылки на элементы соответствующие классу точек)
+    const slides = document.querySelectorAll('.carousel-slide'); // получить коллекцию слайдов с таким классом
 
-let indMin = 0;
-let indMax = 0;
+    for (let i = 0; i < slideDots.length; i++) {
 
-for (let i = 0; i < arr.length; i++) {
-
-    if (arr[i] < arr[indMin]) {
-        indMin = i;
-    }
-    if (arr[i] > arr[indMax]) {
-        indMax = i;
+        // ссылается ли нажатая кнопка на один и тот же элемент разметки
+        if (clickedDotButton === slideDots[i]) {
+            slides[i].classList.add('active'); // добавтить active слайду совпадающему с точкой
+        }
     }
 }
-console.log(arr[indMin], arr[indMax]);
-
-let temp = arr[indMin];
-arr[indMin] = arr[indMax];
-arr[indMax] = temp;
-
-console.log("Измененный массив: [" + arr + "]")
-*/
-
-// Объекты
-// Object.assign({}, obj1) - копирование свойств объекта
