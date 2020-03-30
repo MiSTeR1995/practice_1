@@ -18,30 +18,10 @@ function onDotButtonClick(event) {
         }
     }
 }
-/*
-let activeDotButton = document.querySelector('.protect-nature.second .carousel-dot'); // в переменной хранится ссылка на элемент разметки. Ищутся элементы с классом carousel-dot, берется первый попавшийся и переменная на него ссылается
-function onDotButtonClick2(event) {
-
-    const clickedDotButton = event.target;
-    activeDotButton.classList.remove('active'); // убирает класс active у кнопок на странице
-    clickedDotButton.classList.add('active'); // добавить кликнутой кнопке класс active
-    activeDotButton = clickedDotButton; // в переменной теперь ссылка на кликнутый элемент
-
-    const slideDots = document.querySelectorAll('.protect-nature.second .carousel-dot'); // получить коллекцию всех точек (ссылки на элементы соответствующие классу точек)
-    const carouselSlideElem = document.querySelector('.protect-nature.second .carousel-slides')
-
-    for (let i = 0; i < slideDots.length; i++) {
-
-        // ссылается ли нажатая кнопка на один и тот же элемент разметки
-        if (clickedDotButton === slideDots[i]) {
-            carouselSlideElem.style.transform = `translateX( -${i*100}% )`;
-        }
-    }
-} */
 
 let activeTestiArrowButton = document.querySelector('.testimonials .carousel-arrow');
-
 let feedbacksCounter = 0;
+
 function onTestiArrowButtonClick (event) {
 
     const clickedDotButton = event.target;
@@ -63,6 +43,30 @@ function onTestiArrowButtonClick (event) {
         feedbacksCounter--;
     }
 }
+
+
+
+/*
+let activeDotButton = document.querySelector('.protect-nature.second .carousel-dot'); // в переменной хранится ссылка на элемент разметки. Ищутся элементы с классом carousel-dot, берется первый попавшийся и переменная на него ссылается
+function onDotButtonClick2(event) {
+
+    const clickedDotButton = event.target;
+    activeDotButton.classList.remove('active'); // убирает класс active у кнопок на странице
+    clickedDotButton.classList.add('active'); // добавить кликнутой кнопке класс active
+    activeDotButton = clickedDotButton; // в переменной теперь ссылка на кликнутый элемент
+
+    const slideDots = document.querySelectorAll('.protect-nature.second .carousel-dot'); // получить коллекцию всех точек (ссылки на элементы соответствующие классу точек)
+    const carouselSlideElem = document.querySelector('.protect-nature.second .carousel-slides')
+
+    for (let i = 0; i < slideDots.length; i++) {
+
+        // ссылается ли нажатая кнопка на один и тот же элемент разметки
+        if (clickedDotButton === slideDots[i]) {
+            carouselSlideElem.style.transform = `translateX( -${i*100}% )`;
+        }
+    }
+} */
+
 
         /* let activeTestiDotButton = document.querySelector('.testimonials .carousel-dot');
 
