@@ -53,7 +53,7 @@
         </div>
     </section>
 
-    <section class="protect-nature">
+    <section class="protect-nature first">
         <div class="carousel-slide">
             <img src="./img/slide-1.jpg" class="slide-back" alt="slide-image">
             <div class="slide-back-shadow"></div>
@@ -323,33 +323,71 @@
 
     <section class="testimonials">
         <div class="container sections-with-h2">
-             <h2 class="text-header-2">Testimonials</h2>
-             <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-             <div class="testimonial-content">
-                 <div class="testimonial-feedback">
-                    <div class="feedback fb-left">
+
+            <h2 class="text-header-2">Testimonials</h2>
+            <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+            <div class="testi-carousel-lens">
+                <div class="testimonial-content">
+                    <div class="feedback-content">
                         <div class="feedback-photo"></div>
-                        <i class="fas fa-quote-left fdb-quote"></i>
-                        Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. consectetur Lorem ipsum dolor sita met. Consectetur adipscing elit.
+                        <div class="feedback">
+                            <i class="fas fa-quote-left fdb-quote"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. consectetur Lorem ipsum dolor sita met. Consectetur adipscing elit.
+                        </div>
+                        <div class="feedback-info">
+                            <p class="name-fdb">Sadequr Rahman Sojib </p>
+                            <p class="name-fdb-position">CEO, Fourder</p>
+                        </div>
                     </div>
-                    <div class="feedback-info">
-                        <p class="name-fdb">Sadequr Rahman Sojib </p>
-                        <p class="name-fdb-position">CEO, Fourder</p>
-                    </div>
-                 </div>
-                 <div class="testimonial-feedback">
-                    <div class="feedback fb-right">
+                    <div class="feedback-content">
                         <div class="feedback-photo"></div>
-                        <i class="fas fa-quote-left fdb-quote"></i>
-                        Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. consectetur Lorem ipsum dolor sita met. Consectetur adipscing elit.
+                        <div class="feedback">
+                            <i class="fas fa-quote-left fdb-quote"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. consectetur Lorem ipsum dolor sita met. Consectetur adipscing elit.
+                        </div>
+                        <div class="feedback-info">
+                            <p class="name-fdb">Sagorika Sultana Rupa</p>
+                            <p class="name-fdb-position">Manager, X Co.LTD</p>
+                        </div>
                     </div>
-                    <div class="feedback-info">
-                        <p class="name-fdb">Sagorika Sultana Rupa</p>
-                        <p class="name-fdb-position">Manager, X Co.LTD</p>
+                    <div class="feedback-content">
+                        <div class="feedback-photo"></div>
+                        <div class="feedback">
+                            <i class="fas fa-quote-left fdb-quote"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. consectetur Lorem ipsum dolor sita met. Consectetur adipscing elit.
+                        </div>
+                        <div class="feedback-info">
+                            <p class="name-fdb">Sadequr Rahman Sojib </p>
+                            <p class="name-fdb-position">CEO, Fourder</p>
+                        </div>
                     </div>
-                 </div>
-             </div>
+                    <div class="feedback-content">
+                        <div class="feedback-photo"></div>
+                        <div class="feedback">
+                            <i class="fas fa-quote-left fdb-quote"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipscing elit. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. consectetur Lorem ipsum dolor sita met. Consectetur adipscing elit.
+                        </div>
+                        <div class="feedback-info">
+                            <p class="name-fdb">Sagorika Sultana Rupa</p>
+                            <p class="name-fdb-position">Manager, X Co.LTD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-arrows">
+                <button class="carousel-arrow a-previous" onclick="onTestiArrowButtonClick(event)">
+                    <i class="fas fa-chevron-left arrow-icon" onclick="onTestiArrowButtonClick(event)"></i>
+                </button>
+                <button class="carousel-arrow a-next" onclick="onTestiArrowButtonClick(event)">
+                    <i class="fas fa-chevron-right arrow-icon" onclick="onTestiArrowButtonClick(event)"></i>
+                </button>
+            </div>
         </div>
+        <!-- <div class="carousel-dots">
+            <button class="carousel-dot active" onclick="onTestiDotButtonClick(event)"></button>
+            <button class="carousel-dot" onclick="onTestiDotButtonClick(event)"></button>
+        </div> -->
     </section>
 
     <section class="latest-blog">
@@ -489,6 +527,58 @@
             </div>
         </div>
     </section>
+
+<!--     <section class="protect-nature second">
+        <div class="carousel-lens">
+            <div class="carousel-slides">
+                <div class="carousel-slide">
+                    <img src="./img/slide-1.jpg" class="slide-back" alt="slide-image">
+                    <div class="slide-back-shadow"></div>
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            Protect
+                            <span>earth planet from global warming</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="" class="slide-button">Read more</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./img/slide-2.jpg" class="slide-back" alt="slide-image">
+                    <div class="slide-back-shadow"></div>
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            Protect
+                            <span>nature the environment</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="" class="slide-button">Read more</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./img/slide-3.jpg" class="slide-back" alt="slide-image">
+                    <div class="slide-back-shadow"></div>
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            Protect
+                            <span>old people from corona</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="" class="slide-button">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" onclick="onDotButtonClick2(event)"></button>
+            <button class="carousel-dot" onclick="onDotButtonClick2(event)"></button>
+            <button class="carousel-dot" onclick="onDotButtonClick2(event)"></button>
+        </div>
+    </section>
+ -->
+
+
+
     <footer>
         <div class="container">
             <span>@ 2016 - Design By Sagorika Sultana </span>
