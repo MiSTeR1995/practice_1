@@ -11,17 +11,14 @@ function onDotButtonClick(event) {
     for (var i = 0; i < slideDots.length; i++) {
         // ссылается ли нажатая кнопка на один и тот же элемент разметки
         if (clickedDotButton === slideDots[i]) {
-            slides[i].classList.add('active'); // добавтить active слайду совпадающему с точкой
+            slides[i].classList.add('active'); // добавить active слайду совпадающему с точкой
         }
     }
 }
-let(activeTestiArrowButton) = document.querySelector('.testimonials .carousel-arrow');
-let(feedbacksCounter) = 0;
+var activeTestiArrowButton = document.querySelector('.testimonials .carousel-arrow');
+var feedbacksCounter = 0;
 function onTestiArrowButtonClick(event) {
     var clickedDotButton = event.target;
-    // activeTestiArrowButton.classList.remove('active');
-    // clickedDotButton.classList.add('active');
-    // activeTestiArrowButton = clickedDotButton;
     var feedbacks = document.querySelectorAll('.testimonials .feedback');
     var carouselTestiElem = document.querySelector('.testimonials .testimonial-content');
     if ((clickedDotButton === document.querySelector('.a-next') || clickedDotButton === document.querySelector('.fa-chevron-right')) && feedbacksCounter < feedbacks.length - 2) {
@@ -35,3 +32,4 @@ function onTestiArrowButtonClick(event) {
         feedbacksCounter--;
     }
 }
+//# sourceMappingURL=ts-site.js.map
